@@ -1,0 +1,61 @@
+#+TITLE: Introduction
+#+AUTHOR: Yusheng Zhao
+#+OPTIONS: toc: nil
+
+* Purpose
+This repo is to record my learning process of the series [[https://www.diderot.one/courses/28][Theory of Computer
+Science Toolkit]] by Prof. Ryan O'Donnell. The purpose of this course is to
+provide a breadth-first introduction to the theory of computer science. After
+the course you should be able to follow the most recent research paper on
+computer science theory research and conduct research yourself. The course
+covers the following topics:
+1. [[file:asymptotics_and_probability/][Asymptotics & Probability]]
+2. [[file:Fourier Transforms/][Fourier Transforms]]
+3. [[file:Algebra_and_Applications/][Algebra and Applications]]
+4. [[file:Spectral_Graph_Theory/][Spectral Graph Theory]]
+5. [[file:CSPs_and_Hierarachies/][CSPS and Hierarachies]]
+6. [[file:Information_And_Learning/][Information and Learning]]
+7. [[file:Hardness/][Hardness]]
+
+* Where to find paper
+1. [[https://arxiv.org/archive/cs][Arxiv]]
+2. [[https://eccc.weizmann.ac.il/][ECCC]]
+3. [[http://ieee-focs.org/][FOCS]]
+4. [[http://acm-stoc.org/stoc2023/][STOC]]
+5. [[https://www.siam.org/conferences/cm/conference/soda23][SODA]]
+6. [[https://computationalcomplexity.org/][CCC]]
+
+* Where to ask questions
+1. [[tex.stackexchange.com][On Tex]]
+2. [[math.stackexchange.com][Any math question]]
+3. [[cs.stackexchange.com][Any CS questions]]  and [[cstheory.stackexchange.com][Any CS question 2]]
+4. [[mathoverflow.net][Research level math question]]
+
+* Example
+** Problem Statement
+Given a polynomial of degree $n$ $p(x)$ where $p(x) \in [-1,1] \forall x \in
+[-1,1]$, what is the largest slope of $p(x)$ at $x=0$?
+
+** Solution
+We are not sure how to solve this problem in general. So we consider a special
+instance of this problem. Namely, let $n = 3$ first and $p(x) = a + b x + c
+x^2 + d x^3$. The largest slope of $p(x)$ at $x=0$ is then value of $b$.
+
+We could try to guess the optimal $b$ value by randomly generating ...
+
+#+begin_src julia :session large_slope :results output
+using Pkg;
+Pkg.activate(".")
+using JuMP
+#+end_src
+
+#+RESULTS:
+:
+: Activating project at `~/projects/TCSToolkit`
+
+We could try other instances of the problem. Namely, let \(n = 4,5,6 ...\).
+
+* Useful links
+- [[www.oeis.org][Online Encyclopedia of Integer Sequences]]
+- [[https://wayback.cecm.sfu.ca/projects/ISC/ISCmain.html][Inverse Symbolic Calculator]]: gives you expression from a number.
+- [[cstheory-feed.org][Theory Report]]
