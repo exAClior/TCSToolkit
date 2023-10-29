@@ -1,0 +1,11 @@
+#+TITLE: Big O Notation
+#+AUTHOR: Yusheng Zhao
+
+* Big O Notation and others
+1. Big O notation: roughly $\leq$ \(f(x) = \mathcal{O}(g(x)\) means \(\exists x \leq x_{0}\), \(0 \leq f(x) \leq C * g(x)\)
+2. Big $\Omega$ notation: roughly \(\geq\)
+3. Big $\Theta$ notation: roughly \(\approx\)
+4. Little variants: remove the equality
+5. Poly order: \( f(x) = \text{poly}(g(x))\) means \(f(x) = g(x)^{\mathcal{O}(1)}\)
+6. Upto poly-log order: \( f(x) = \tilde{\mathcal{O}}(g(x))\) means \(f(x) =
+   g(x) \text{poly}(\log(g(x))\)
