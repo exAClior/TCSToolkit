@@ -41,17 +41,11 @@ We are not sure how to solve this problem in general. So we consider a special
 instance of this problem. Namely, let $n = 3$ first and $p(x) = a + b x + c
 x^2 + d x^3$. The largest slope of $p(x)$ at $x=0$ is then value of $b$.
 
-We could try to guess the optimal $b$ value by randomly generating ...
+We could try to "guess" the maximal $b$ value using linear programming. Firstly,
+we randomly generate a couple thousand points $x$ in $[-1,1]$. We then formulate
+a linear programming problem of maximizing $b$ for all thse points.
 
-#+begin_src julia :session large_slope :results output
-using Pkg;
-Pkg.activate(".")
-using JuMP
-#+end_src
-
-#+RESULTS:
-:
-: Activating project at `~/projects/TCSToolkit`
+#+INCLUDE: intro_code.jl
 
 We could try other instances of the problem. Namely, let \(n = 4,5,6 ...\).
 

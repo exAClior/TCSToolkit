@@ -1,6 +1,8 @@
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
 JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
 MathLink = "18c93696-a329-5786-9845-8443133fa0b4"
 MathLinkExtras = "319bc7fa-14a0-11ec-21e1-6160fff0bbd8"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
