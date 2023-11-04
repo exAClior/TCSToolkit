@@ -2,6 +2,7 @@
 #+AUTHOR: Yusheng Zhao
 
 * Big O Notation and others
+
 1. Big O notation: roughly $\leq$ \(f(x) = \mathcal{O}(g(x)\) means \(\exists x \leq x_{0}\), \(0 \leq f(x) \leq C * g(x)\)
 2. Big $\Omega$ notation: roughly \(\geq\)
 3. Big $\Theta$ notation: roughly \(\approx\)
@@ -9,3 +10,11 @@
 5. Poly order: \( f(x) = \text{poly}(g(x))\) means \(f(x) = g(x)^{\mathcal{O}(1)}\)
 6. Upto poly-log order: \( f(x) = \tilde{\mathcal{O}}(g(x))\) means \(f(x) =
    g(x) \text{poly}(\log(g(x))\)
+
+** Harmonic Number Asymptotics: an example
+- Def: \(H_{n} = \sum_{i}^{n} \frac{1}{n}\)
+- To approximate with upper bound: turn terms \(1/n \rightarrow 1/2^{k}\) if \(2^{k-1} < n < 2^{k}\), \(H_{n} = \mathcal{O}(\log_{2}n + 1)\)
+- Similarly could get lower bound: by turn terms \(1/n \rightarrow 1/2^{k
+  -1}\), \(H_{n} = \Omega(1/2 \log_{2} n)  + 1 \)
+- Could also approximate the sum with rectangular rule (either over-estimate or
+  under-estimate to get approx).
